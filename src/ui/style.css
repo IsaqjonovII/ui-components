@@ -1,0 +1,63 @@
+/* For the class "py-20 flex items-center justify-center" */
+.py-20 {
+  padding-top: 5rem; /* Adjust the value accordingly */
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* For the class "flex items-center justify-center relative transition-all duration-200 ease-linear" */
+.flex-relative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 200ms linear;
+}
+
+/* For the class "h-96 w-96 transform-style-preserve-3d" */
+.h-96 {
+  height: 24rem; /* Adjust the value accordingly */
+}
+
+.w-96 {
+  width: 24rem; /* Adjust the value accordingly */
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Apply transform-style: preserve-3d to all direct children */
+.transform-style-preserve-3d > * {
+  transform-style: preserve-3d;
+}
+
+/* For the class "duration-200" */
+.duration-200 {
+  transition: all 200ms linear;
+}
+
+/* For the class "w-fit" */
+.w-fit {
+  width: fit-content;
+}
+
+/* For the class "transition" */
+.transition {
+  transition-property: all;
+}
+
+/* For the class "ease-linear" */
+.ease-linear {
+  transition-timing-function: linear;
+}

@@ -1,0 +1,39 @@
+.btn-wrp {
+  width: 250px;
+  height: 50px;
+  background-color: #00000054;
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-text {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #3737372f;
+  backdrop-filter: blur(4px) saturate(1.2);
+}
+.btn-wrp:hover {
+  background: linear-gradient(90deg, #61c839af, #1f5e6b53);
+}
+.btn-wrp:hover::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y) - 30px);
+  left: calc(var(--x) - 30px);
+  width: 60px;
+  height: 60px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(white, #3984ff00 80%);
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
